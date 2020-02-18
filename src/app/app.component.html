@@ -1,22 +1,3 @@
-<clr-main-container>
-  <clr-header>
-    <div class="branding">
-      <a [routerLink]="['/']" routerLinkActive="router-link-active" class="nav-link">
-        <clr-icon shape="event"></clr-icon>
-        <span class="title">Combievents</span>
-      </a>
-    </div>
-  </clr-header>
-  <div class="content-container">
-    <main class="content-area">
-      <router-outlet></router-outlet>
-    </main>
-    <nav class="sidenav" [clr-nav-level]="1">
-      <section class="sidenav-content">
-        <a [routerLink]="['/events']" routerLinkActive="router-link-active" class="nav-link active">
-          Events
-        </a>
-      </section>
-    </nav>
-  </div>
-</clr-main-container>
+<cev-layout>
+  <router-outlet></router-outlet>
+</cev-layout>

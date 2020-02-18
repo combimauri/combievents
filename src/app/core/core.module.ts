@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import { ClarityModule } from '@clr/angular';
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
+    BrowserModule,
+    ClarityModule,
+    BrowserAnimationsModule,
   ]
 })
 export class CoreModule { }
